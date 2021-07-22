@@ -58,4 +58,4 @@ dkms.conf
 **/*.s
 **/a.out
 /tmp*
-/chibicc
+/ccc

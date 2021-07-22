@@ -17,24 +17,29 @@ subdocuments(という名の面白かったサイト):
  from [Mukul Rathi](https://twitter.com/mukulrathi_)
 
 ## Requires and Do
+### Requires
+ - gcc
+### 
 1. Make sure you have installed the dependencies:
-   - Cargo 1.49.0 or later
+   - `apt install gcc`
 
 2. Clone the source with git:
      ```bash
-   git clone https://github.com/smirror/rust-chibicc.git
+   git clone git@github.com:smirror/CCC.git
     ```
 3. - Test for all cases passed now:
         ```bash
         cd rust-chibicc
-        bash test.sh
+        bash -x test.sh
         ```
 
    - Check it given a test case:
         ```bash
         cd rust-chibicc
-        cargo run -- "(test cases)"
+        cc -o ccc main.c
+        ./9cc (test_case) > tmp.s
         ```
+
 ## Implementation
 ### 電卓レベルの言語の作成
 - [x]  Step 1: Print one number

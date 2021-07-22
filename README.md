@@ -29,15 +29,15 @@ subdocuments(という名の面白かったサイト):
     ```
 3. - Test for all cases passed now:
         ```bash
-        cd rust-chibicc
+        cd CCC
         bash -x test.sh
         ```
 
    - Check it given a test case:
         ```bash
-        cd rust-chibicc
+        cd CCC 
         cc -o ccc main.c
-        ./9cc (test_case) > tmp.s
+        ./ccc (test_case) > tmp.s
         ```
 
 ## Implementation

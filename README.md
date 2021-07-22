@@ -1,5 +1,4 @@
-# CCC
-C compile in C
+# CCC : C compile in C
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -36,7 +35,7 @@ subdocuments(という名の面白かったサイト):
    - Check it given a test case:
         ```bash
         cd CCC
-        cc -o ccc main.c | ./ccc (test_case) > tmp.s
+        cc -o ccc ccc.c | ./ccc (test_case) > tmp.s
         cc -o tmp tmp.s | ./tmp | echo $?
         ```
 

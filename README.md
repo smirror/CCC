@@ -46,7 +46,7 @@ subdocuments(という名の面白かったサイト):
 - [x]  Step 2: Operetor '+' & '-'
 - [x]  Step 3: replace space' '
 - [x]  Step 4: Error messages
-- [ ]  Step 5: Add '*' & ',' & '/' & '()'
+- [x]  Step 5: Add '*' & ',' & '/' & '()'
 - [ ]  Step 6: Add unary plus and minus
 - [ ]  Step 7: Add "==", "!=", "<=" and ">=" operators
 ### 分割コンパイルとリンク

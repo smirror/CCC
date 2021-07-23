@@ -33,7 +33,7 @@ subdocuments(という名の面白かったサイト):
         bash -x test.sh
         ```
 
-   - Check it given a test case:
+   - Check it giving a test case:
         ```bash
         cd CCC
         cc -o ccc main.c | ./ccc (test_case) > tmp.s

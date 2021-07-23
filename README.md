@@ -35,7 +35,7 @@ subdocuments(という名の面白かったサイト):
    - Check it given a test case:
         ```bash
         cd CCC
-        cc -o ccc ccc.c | ./ccc (test_case) > tmp.s
+        cc -o ccc main.c | ./ccc (test_case) > tmp.s
         cc -o tmp tmp.s | ./tmp | echo $?
         ```
 

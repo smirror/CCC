@@ -35,8 +35,8 @@ void error_at(char *loc, char *fmt, ...) {
 
   int pos = loc - user_input;
   fprintf(stderr, "%s\n", user_input);
-  fprintf(stderr, "%*s", pos, " "); // pos個の空白を出力
-  fprintf(stderr, "^ ");
+  fprintf(stderr, "%*s^ ", pos, " "); // pos個の空白を出力
+//  fprintf(stderr, "");
   vfprintf(stderr, fmt, ap);
   fprintf(stderr, "\n");
   exit(1);
@@ -65,7 +65,7 @@ bool consume(char op) {
 // それ以外の場合にはエラーを報告する。
 void expect(char op) {
   if (token->kind != TK_RESERVED || token->str[0] != op)
-    error_at(token->str, "expected '%c'", op);
+    error_at(token->str, "expected arithmetic operator");
   token = token->next;
 }
 

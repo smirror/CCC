@@ -20,7 +20,7 @@ subdocuments(という名の面白かったサイト):
  - gcc
 ### 
 1. Make sure you have installed the dependencies:
-   - `apt install gcc`
+   - `sudo apt install gcc make`
 
 2. Clone the source with git:
      ```bash

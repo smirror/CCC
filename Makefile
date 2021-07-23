@@ -1,6 +1,7 @@
 CFLAGS=-std=c11 -g -static
 
 ccc: main.o
+		$(CC) -o $@ $? $(LDFLAGS)
 
 test: ccc
 		./test.sh

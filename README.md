@@ -18,6 +18,7 @@ subdocuments(という名の面白かったサイト):
 ## Requires and Do
 ### Requires
  - gcc
+ - make
 ### 
 1. Make sure you have installed the dependencies:
    - `sudo apt install gcc make`

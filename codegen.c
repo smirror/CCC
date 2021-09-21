@@ -64,15 +64,27 @@ static void gen_expr(Node *node) {
   error("invalid expression");
 }
 
+static void gen_stmt(Node *node) {
+  if (node->kind == ND_EXPR_STMT) {
+    gen_expr(node->lhs);
+    return;
+  }
+
+  error("invalid statement");
+}
+
 void codegen(Node *node) {
   // アセンブリの前半部分を出力
   printf("  .globl main\n");
   printf("main:\n");
   // 抽象構文木を下りながらコード生成
-  gen_expr(node);
-  printf("  ret\n");
+  for (Node *n = node; n; n = n->next) {
+    gen_stmt(n);
+    // スタックトップに式全体の値が残っているはずなので
+    // それをRAXにロードして関数からの返り値とする
+    assert(depth == 0);
+  }
 
-  // スタックトップに式全体の値が残っているはずなので
-  // それをRAXにロードして関数からの返り値とする
   assert(depth == 0);
+  printf("  ret\n");
 }

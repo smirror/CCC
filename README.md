@@ -50,7 +50,7 @@ subdocuments(という名の面白かったサイト):
 - [x]  Step 6: Add unary plus and minus
 - [x]  Step 7: Add "==", "!=", "<=" and ">=" operators
 ### 分割コンパイルとリンク
-- [ ]  Step 8: ファイル分割とMakefileの変更
+- [x]  Step 8: ファイル分割とMakefileの変更
 ### 関数とローカル変数
 - [ ]  Step 9: 1文字のローカル変数
 - [ ]  Step 10: 複数文字のローカル変数

@@ -47,7 +47,7 @@ subdocuments(という名の面白かったサイト):
 - [x]  Step 3: replace space' '
 - [x]  Step 4: Error messages
 - [x]  Step 5: Add '*' & ',' & '/' & '()'
-- [ ]  Step 6: Add unary plus and minus
+- [x]  Step 6: Add unary plus and minus
 - [ ]  Step 7: Add "==", "!=", "<=" and ">=" operators
 ### 分割コンパイルとリンク
 - [ ]  Step 8: ファイル分割とMakefileの変更

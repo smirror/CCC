@@ -59,6 +59,8 @@ dkms.conf
 **/a.out
 /tmp*
 /ccc
+/gccc
+/cccc
 
 # SpaceVim config
 .project_alt.json

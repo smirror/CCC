@@ -3,10 +3,17 @@ assert() {
   expected="$1"
   input="$2"
 
-  ./ccc "$input" > tmp.s
-  cc -o tmp tmp.s
-  ./tmp
-  actual="$?"
+  if [ -e gccc ]; then
+    ./gccc "$input" > tmp.s
+    cc -o tmp tmp.s
+    ./tmp
+    actual="$?"
+  elif [ -e cccc ]; then
+    ./cccc "$input" > tmp.s
+    cc -o tmp tmp.s
+    ./tmp
+    actual="$?"
+  fi
 
   if [ "$actual" = "$expected" ]; then
     echo "$input => $actual"

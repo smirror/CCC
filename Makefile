@@ -2,13 +2,21 @@ CFLAGS=-std=c17 -g -static
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
 
-ccc: $(OBJS)
+gccc: $(OBJS)
 		$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+
+cccc: $(OBJS)
+		clang $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 $(OBJS): ccc.h
 
-test: ccc
+gtest: gccc
 		./test.sh
+
+ctest: cccc
+		./test.sh
+
+test: ctest gtest
 
 clean:
 		rm -f ccc *.o *~ tmp*

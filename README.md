@@ -22,7 +22,7 @@ subdocuments(という名の面白かったサイト):
  - make
 ### 
 1. Make sure you have installed the dependencies:
-   - `sudo apt install gcc make`
+   - `sudo apt install gcc make clang`
 
 2. Clone the source with git:
      ```bash

@@ -10,15 +10,15 @@ cccc: $(OBJS)
 
 $(OBJS): ccc.h
 
-gtest: gccc
+gtest: clean gccc
 		./test.sh
 
-ctest: cccc
+ctest: clean cccc
 		./test.sh
 
-test: ctest gtest
+test: gtest ctest
 
 clean:
-		rm -f ccc *.o *~ tmp*
+		rm -f ccc cccc gccc *.o *~ tmp*
 
 .PHONY: test clean
